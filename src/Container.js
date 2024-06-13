@@ -15,7 +15,7 @@ export function Container() {
     bill ? setTip(value) : setTip(0);
   }
   function handleBill(value) {
-    setBill(value);
+    setBill(isNaN(value) ? 0 : value);
     if (value === 0) {
       setMyFriendTip(0);
       setMytip(0);
