@@ -1,23 +1,11 @@
-import { useState } from "react";
+import "./styles.css";
+import { Container } from "./Container";
+import { Reset } from "./Reset";
 
 export default function App() {
-  const [bill, setBill] = useState(0);
   return (
     <div>
-      <Bill bill={bill} setBill={setBill}></Bill>
-    </div>
-  );
-}
-
-function Bill({ bill, setBill }) {
-  return (
-    <div>
-      <span>How much was the Bill? </span>
-      <input
-        type="text"
-        value={bill}
-        onChange={(e) => setBill(e.target.value)}
-      />
+      <Container />
     </div>
   );
 }
