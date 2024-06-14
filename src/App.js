@@ -1,11 +1,10 @@
 import "./styles.css";
-import { Container } from "./Container";
-import { Reset } from "./Reset";
+import { TipCalcultor } from "./TipCalcultor";
 
 export default function App() {
   return (
     <div>
-      <Container />
+      <TipCalcultor />
     </div>
   );
 }

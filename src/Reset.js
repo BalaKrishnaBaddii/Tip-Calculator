@@ -1,8 +1,3 @@
-export function Reset({ onBill, onmyFriendtip, onMytip }) {
-  function handleReset() {
-    onBill(0);
-    onmyFriendtip(0);
-    onMytip(0);
-  }
+export function Reset({ handleReset }) {
   return <button onClick={handleReset}>Rest</button>;
 }

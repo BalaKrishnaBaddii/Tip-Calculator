@@ -1,11 +1,14 @@
-export function Bill({ bill, setBill, onBill, setMyFriendTip, setMytip }) {
+export function Bill({ bill, setBill, reset }) {
   return (
     <div className="box-line">
       <span>How much was the Bill? </span>
       <input
         type="text"
         value={bill}
-        onChange={(e) => onBill(Number(e.target.value))}
+        placeholder="Bill Value"
+        onChange={(e) =>
+          e.target.value ? setBill(Number(e.target.value)) : reset()
+        }
       />
     </div>
   );
