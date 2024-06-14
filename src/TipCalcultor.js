@@ -12,7 +12,7 @@ export function TipCalcultor() {
   const tip = (bill * averageTipPercentage) / 100;
 
   function handleReset() {
-    setBill(0);
+    setBill("");
     setMytip(0);
     setMyFriendTip(0);
   }

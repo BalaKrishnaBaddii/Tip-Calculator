@@ -7,7 +7,7 @@ export function Bill({ bill, setBill, reset }) {
         value={bill}
         placeholder="Bill Value"
         onChange={(e) =>
-          e.target.value ? setBill(Number(e.target.value)) : reset()
+          e.target.value > 0 ? setBill(Number(e.target.value)) : reset()
         }
       />
     </div>
